@@ -51,6 +51,21 @@
             {
                 Console.WriteLine("Le parole hanno la stessa lunghezza.");
             }
+
+            // SNACK 3
+            int sum = 0; 
+
+            // Chiedo all'utente di inserire un numero per 10 volte
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"Inserisci il {i + 1}° numero:");
+                int numero = Convert.ToInt32(Console.ReadLine());
+
+                // Aggiungo il numero alla somma
+                sum += numero;
+            }
+
+            Console.WriteLine("La somma di tutti i numeri inseriti è: " + sum);
         }
     }
 }
