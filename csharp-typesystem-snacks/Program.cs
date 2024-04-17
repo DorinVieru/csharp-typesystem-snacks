@@ -7,6 +7,8 @@
             /* ---------
              SNACK 1
             */
+            Console.WriteLine("SANCK 1");
+
             Console.WriteLine("Inserisci il primo numero:");
             int numero1 = Convert.ToInt32(Console.ReadLine());
 
@@ -30,6 +32,8 @@
             /* ---------
              SNACK 2
             */
+            Console.WriteLine("SANCK 2");
+
             Console.WriteLine("Inserisci una parola a tua scelta:");
             string word1 = Convert.ToString(Console.ReadLine());
 
@@ -59,6 +63,8 @@
             /* ---------
              SNACK 3
             */
+            Console.WriteLine("SANCK 3");
+
             int sum = 0; 
 
             // Chiedo all'utente di inserire un numero per 10 volte
@@ -76,6 +82,8 @@
             /* ---------
              SNACK 4
             */
+            Console.WriteLine("SANCK 4");
+
             int somma = 0;
             double media = 0;
 
@@ -94,6 +102,8 @@
             /* ---------
              SNACK 5
             */
+            Console.WriteLine("SANCK 5");
+
             Console.WriteLine("Inserisci un numero:");
             int number = Convert.ToInt32(Console.ReadLine());
 
@@ -110,6 +120,8 @@
             /* ---------
              SNACK 6
             */
+            Console.WriteLine("SANCK 6");
+
             string[] invitates = { "Dorin", "Davide", "Andrea", "Calin", "Mirko" };
 
             Console.Write("Inserisci il tuo nome: ");
@@ -139,6 +151,8 @@
             /* ---------
              SNACK 7
             */
+            Console.WriteLine("SANCK 7");
+
             int[] oddNumber = new int[6];
             int index = 0;
 
@@ -166,6 +180,8 @@
             /* ---------
              SNACK 8
             */
+            Console.WriteLine("SANCK 8");
+
             int[] numbers = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
 
             int sumOddNumbers = 0;
@@ -178,6 +194,34 @@
 
             Console.WriteLine("La somma degli elementi con indice dispari è: " + sumOddNumbers);
 
+            /* ---------
+             SNACK 9
+            */
+            Console.WriteLine("SANCK 9");
+
+            int[] arrayNumbers = new int[20];
+
+            int newSum = 0;
+
+            // Ciclo per chiedere all'utente di inserire numeri fino a quando la somma è inferiore o è uguale a 50
+            for (int i = 0; i < arrayNumbers.Length && newSum < 50; i++)
+            {
+                Console.Write("Inserisci un numero: ");
+                int userNum = Convert.ToInt32(Console.ReadLine());
+
+                arrayNumbers[i] = userNum;
+
+                newSum += userNum;
+            }
+
+            // Stampo l'array e la somma degli elementi
+            Console.WriteLine("Gli elementi dell'array sono:");
+            for (int i = 0; i < arrayNumbers.Length && arrayNumbers[i] != 0; i++)
+            {
+                Console.WriteLine(arrayNumbers[i]);
+            }
+
+            Console.WriteLine("La somma degli elementi è: " + newSum);
         }
     }
 }
