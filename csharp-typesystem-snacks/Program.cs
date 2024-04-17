@@ -222,6 +222,34 @@
             }
 
             Console.WriteLine("La somma degli elementi è: " + newSum);
+
+            /* ---------
+             SNACK 10
+            */
+            Console.WriteLine("SANCK 10");
+
+            Console.Write("Inserisci il numero di array da generare: ");
+            int N = Convert.ToInt32(Console.ReadLine());
+
+            // Genero e stampo il numero di array che ha indicato l'utente
+            for (int i = 0; i < N; i++)
+            {
+                // Genero un nuovo array di 10 numeri casuali tra 1 e 100
+                int[] array = new int[10];
+                Random random = new Random();
+                for (int j = 0; j < array.Length; j++)
+                {
+                    array[j] = random.Next(1, 101);
+                }
+
+                // Stampo l'array appena generato
+                Console.WriteLine("Array " + (i + 1) + ":");
+                foreach (int newNumArray in array)
+                {
+                    Console.Write(newNumArray + " ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
