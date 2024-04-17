@@ -106,6 +106,35 @@
             {
                 Console.WriteLine($"Numero inserito è disapari. Viene inserito il numero successivo: {number + 1}");
             }
+
+            /* ---------
+             SNACK 6
+            */
+            string[] invitates = { "Dorin", "Davide", "Andrea", "Calin", "Mirko" };
+
+            Console.Write("Inserisci il tuo nome: ");
+            string userName = Convert.ToString(Console.ReadLine());
+
+            // Verifica se il nome dell'utente è presente nell'array invitates
+            bool invitate = false;
+            foreach (string nome in invitates)
+            {
+                if (nome.Equals(userName, StringComparison.OrdinalIgnoreCase))
+                {
+                    invitate = true;
+                    break;
+                }
+            }
+
+            // Messaggio all'utente se può partecipare o meno alla festa
+            if (invitate)
+            {
+                Console.WriteLine("Sei stato invitato alla festa del Grande Gatsby. Che bravo!");
+            }
+            else
+            {
+                Console.WriteLine("Mi dispiace, ti conviene andartene prima che finisca malissimo.");
+            }
         }
     }
 }
