@@ -162,6 +162,22 @@
             {
                 Console.WriteLine(oddNumber[i]);
             }
+
+            /* ---------
+             SNACK 8
+            */
+            int[] numbers = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+
+            int sumOddNumbers = 0;
+
+            // Ciclo l'array e sommo solo gli elementi in posizione dispari
+            for (int i = 1; i < numbers.Length; i += 2)
+            {
+                sumOddNumbers += numbers[i];
+            }
+
+            Console.WriteLine("La somma degli elementi con indice dispari è: " + sumOddNumbers);
+
         }
     }
 }
