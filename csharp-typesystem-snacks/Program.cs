@@ -90,6 +90,22 @@
 
             Console.WriteLine("La somma dei numeri compresi da 2 a 10 è: " + somma);
             Console.WriteLine("La media dei numeri compresi da 2 a 10 è: " + media);
+
+            /* ---------
+             SNACK 5
+            */
+            Console.WriteLine("Inserisci un numero:");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            // Verifica se il numero è pari o dispari
+            if (number % 2 == 0)
+            {
+                Console.WriteLine($"Numero inserito è pari. Eccolo: {number}");
+            }
+            else
+            {
+                Console.WriteLine($"Numero inserito è disapari. Viene inserito il numero successivo: {number + 1}");
+            }
         }
     }
 }
