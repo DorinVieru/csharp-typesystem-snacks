@@ -135,6 +135,33 @@
             {
                 Console.WriteLine("Mi dispiace, ti conviene andartene prima che finisca malissimo.");
             }
+
+            /* ---------
+             SNACK 7
+            */
+            int[] oddNumber = new int[6];
+            int index = 0;
+
+            // Chiedo all'utente di inserire un numero per 6 volte
+            for (int i = 0; i < 6; i++)
+            {
+                Console.Write("Inserisci un numero: ");
+                int newNumber = Convert.ToInt32(Console.ReadLine());
+
+                // Verifica se il numero inserito è dispari
+                if (newNumber % 2 != 0)
+                {
+                    oddNumber[index] = newNumber;
+                    index++;
+                }
+            }
+
+            // Stampo i numeri dispari inseriti nell'array
+            Console.WriteLine("I numeri dispari inseriti sono:");
+            for (int i = 0; i < index; i++)
+            {
+                Console.WriteLine(oddNumber[i]);
+            }
         }
     }
 }
